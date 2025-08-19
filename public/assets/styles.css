@@ -1,0 +1,20 @@
+
+/* site styles */
+:root{--accent:#0b5d7a;--muted:#f4f4f7;--bg:#ffffff}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#222; background:var(--bg)}
+.header{background:var(--accent); color:white; padding:28px 18px; display:flex; align-items:center; gap:18px}
+.header img{height:56px; border-radius:6px; object-fit:cover}
+.site-title{font-size:22px; font-weight:700}
+.nav{display:flex; gap:12px; margin-left:auto}
+.nav a{color:white; text-decoration:none; padding:8px 12px; border-radius:6px; font-weight:600; background:rgba(255,255,255,0.07)}
+.container{max-width:1100px; margin:30px auto; padding:0 18px}
+.hero{display:grid; grid-template-columns:1fr; gap:18px; align-items:center}
+.hero .cover{width:100%; border-radius:10px; box-shadow:0 8px 24px rgba(11,93,122,0.12)}
+.card-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:18px}
+.card{border:1px solid #e9eef0; padding:14px; border-radius:10px; background:#fff}
+.card h3{margin:0 0 8px 0}
+.footer{padding:28px 18px; text-align:center; color:#666; border-top:1px solid #eee; margin-top:40px}
+.badge{display:inline-block; padding:6px 8px; background:#eef7fa; border-radius:6px; color:var(--accent); font-weight:700}
+.resource-link{display:inline-block; margin-top:10px; text-decoration:none; color:var(--accent); font-weight:600}
+.codebox{background:#f7f9fa; padding:12px; border-radius:8px; font-family:monospace; font-size:13px; overflow:auto}
+@media (min-width:900px){ .hero{grid-template-columns: 1fr 420px} }
